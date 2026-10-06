@@ -26,24 +26,31 @@ The dataset contains:
 The dataset contains information related to:
 
 **Customer Demographics**
+
 Gender (SEX),Education (EDUCATION),Marriage status (MARRIAGE),Age (AGE)
 
 **Credit Information**
+
 Credit limit (LIMIT_BAL)
 
 **Repayment History**
+
 PAY_0,PAY_2,PAY_3,PAY_4,PAY_5,PAY_6
 
 **Bill Amounts**
+
 BILL_AMT1,BILL_AMT2,BILL_AMT3,BILL_AMT4,BILL_AMT5,BILL_AMT6
 
 **Payment Amounts**
+
 PAY_AMT1,PAY_AMT2,PAY_AMT3,PAY_AMT4,PAY_AMT5,PAY_AMT6
 
-The target variable is:
+**target variable**
+
 default:
 
 0 → Customer did not default
+
 1 → Customer defaulted
 
 ## Exploratory Data Analysis
@@ -82,12 +89,15 @@ The following preprocessing steps were performed:
 Several additional features were created to capture customer financial and repayment behavior.
 
 **Bill-related Features**
+
 TOTAL_BILL,AVG_BILL,MAX_BILL
 
 **Payment-related Features**
+
 TOTAL_PAYMENT,AVG_PAYMENT,PAYMENT_STD,ZERO_PAYMENT_MONTHS,Repayment-delay Features,TOTAL_PAY_DELAY,MAX_PAY_DELAY,NUM_DELAYED_MONTHS,AVG_PAY_DELAY
 
 **Additional Financial Features**
+
 BILL_CHANGE_1M,CREDIT_UTILIZATION,AVG_CREDIT_UTILIZATION,PAYMENT_TO_BILL_RATIO
 
 These features help the model capture repayment patterns and financial behavior more effectively.
@@ -106,6 +116,9 @@ Several classification algorithms were evaluated:
 The models were evaluated using multiple classification metrics:
 
 Accuracy,Precision,Recall,F1 Score,ROC-AUC
+
+<img width="690" height="275" alt="image" src="https://github.com/user-attachments/assets/bf4611ec-4393-4d7f-88ee-f2bbf1cbae07" />
+
 
 Because the target variable is imbalanced, F1 Score and Recall are particularly important for evaluating the model's ability to identify defaulting customers.
 
