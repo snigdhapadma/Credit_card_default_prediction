@@ -134,14 +134,3 @@ Random Forest was selected as the deployment model after hyperparameter tuning.
 | Recall    | 57.95% |
 | F1 Score  | 54.31% |
 | ROC-AUC   | 77.81% |
-
-
-## Project Structure
-
-credit_card_default_prediction/
-│
-├── app.py
-├── Credit Card Defaulter Prediction.csv
-├── credit_card_default_model.pkl
-├── requirements.txt
-└── README.md
